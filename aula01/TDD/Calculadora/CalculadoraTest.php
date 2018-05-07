@@ -40,8 +40,6 @@ class CalculadoraTest extends TestCase
 	public function testDivi()
 	{
 		$result = $this->calc->divi(2, 2);
-		$this->assertSame(1, $result);
-		
-				
+		$this->assertSame(1, $result);		
 	}
 }
