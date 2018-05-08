@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dentro de apostilas, há apostila -->
+<apostilas>
+	<apostila id="1" ano="2018">
+		<titulo>Dominando PHP</titulo>
+		<topicos>
+			<topico>Baby PHP</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	<paginas>150</paginas><capitulos><capitulo>1 - Inicio</capitulo><capitulo>2 - Ambiente</capitulo><capitulo>3 - Próximo passo</capitulo></capitulos></apostila>
+	<apostila id="2">
+		<titulo>Fodão do Java</titulo>
+		<topicos>
+			<topico>Introducao</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	<paginas>135</paginas><capitulos><capitulo>1 - Inicio</capitulo><capitulo>2 - Ambiente</capitulo><capitulo>3 - Próximo passo</capitulo></capitulos></apostila>
+	<apostila id="3">
+		<titulo>Rubyzando</titulo>
+		<topicos>
+			<topico>Introducao</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	<paginas>127</paginas><capitulos><capitulo>1 - Inicio</capitulo><capitulo>2 - Ambiente</capitulo><capitulo>3 - Próximo passo</capitulo></capitulos></apostila>
+</apostilas>
