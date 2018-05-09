@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apostilas>
+	<apostila id="20">
+		<titulo>PHP é nóis</titulo>
+		<topicos>
+			<topico>Baby PHP</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	</apostila>
+	<apostila id="2">
+		<titulo>DOM Java</titulo>
+		<topicos>
+			<topico>Introducao</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	</apostila>
+	<apostila id="3">
+		<titulo>Ruby e DOM</titulo>
+		<topicos>
+			<topico>Introducao</topico>
+			<topico>Intermediario</topico>
+			<topico>Avancado</topico>
+		</topicos>
+	</apostila>
+</apostilas>
