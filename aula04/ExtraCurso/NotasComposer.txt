@@ -1,0 +1,48 @@
+Pacote que faltava:
+(( sudo apt install php7.0-mbstring ))
+
+
+-> Update a versão do composer
+	sudo composer selfupdate
+
+-> Iniciar projeto com composer
+	composer init
+		Empresa/Nome
+		Descriçaõ do projeto
+		Autor, sugere o global do git
+		MinimunStabiliti dev
+		tipo: normalmente, projeto
+		--
+		dependencia de pacote: Definir se precisa instalar algum outro pacote junto
+		dependecia de dev: Pacotes utilizados paenas em ambiente de dev
+
+	Ou vai direto no projeto e cria um composer.json
+
+-> Adicionando dependências(bibliotecas) do projeto
+{packagist}
+	escrever dentro do composer.json - composer install
+	ou
+	(shell) composer require ...
+
+-> Add somente no ambiente dev
+	composer require --dev ...
+
+-> Removendo dependências:
+	(shell) composer remove ...
+
+-> Relê o arquivo entendendo o autoload ("App\\" é o namespace adicionado a todos os arquivos dentro de "src/")
+	composer dumpautoload
+
+-> Composer e versionamento
+	criar arquivo .gitignore
+	Já que o gitignore está na mesma pasta que o restante do pjetodo (vendor), é só escrever vendor/
+
+
+****
+achar erros:
+
+sudo su
+cd var/log/apache2
+
+tail -f error. ...
+tail -f access. ...

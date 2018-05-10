@@ -1,0 +1,25 @@
+Criando um Virtual Holt:
+
+Criado em /etc/apache2/sites-available 	-> sites criados
+Criado em /etc/apache2/sites-enabled 	-> sites habilitados
+	Criar arquivo .conf no available e depois dar o a2ensite nome.conf
+	comando irá tornar o site enable
+
+Exemplo de configuração de vhost:
+
+<VirtualHost *:80>
+	
+	# Endereco do site
+	ServerName blog.com.br
+
+	# Pasta do projeto
+	DocumentRoot /var/www/html/502/aula03/exemple/parallax-template
+
+	# Configuracoes da pasta
+	<Directory /var/www/html/502/aula03/exemple/parallax-template>
+		Options Indexes FollowSymLinks
+		AllowOverride All
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>

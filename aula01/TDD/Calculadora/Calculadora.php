@@ -1,5 +1,5 @@
 <?php
-
+echo 'lalal';
 class Calculadora
 {
 	public function somar(int $a,int $b)
