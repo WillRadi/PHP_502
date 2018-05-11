@@ -37,6 +37,16 @@ Pacote que faltava:
 	criar arquivo .gitignore
 	Já que o gitignore está na mesma pasta que o restante do pjetodo (vendor), é só escrever vendor/
 
+-> Rodando scripts do composer.json no terminal
+	composer run-script testando
+	 - testando = nome do script
+	 -> no composer.json:
+	 	
+	 	"run-server": [
+	 		"php -S 0.0.0.0:8001 index.php"
+	 	]
+
+
 
 ****
 achar erros:
