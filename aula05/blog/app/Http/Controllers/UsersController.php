@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Model\User;
 
@@ -41,7 +42,7 @@ class UsersController extends Controller
     			'name'		=> 'required|string|max:255',
     			'email'		=> 'required|string|email|max:255',
     			'password'	=> 'required|min:6'
-    		])
+    		]);
 
     	$user = new User();
     	$user->fill($data);
@@ -57,7 +58,7 @@ class UsersController extends Controller
     			'name'		=> 'required|string|max:255',
     			'email'		=> 'required|string|email|max:255',
     			'password'	=> 'required|min:6'
-    		])
+    		]);
 
     	$user->update($data);
     }
@@ -67,7 +68,20 @@ class UsersController extends Controller
     	$user = User::find($user);
     	if (!$user) {
     		return response()->json(null, 204);
-    	
+    	}
     	$user->delete();
+
+    }
+
+    public function posts($user)
+    {
+        $user = User::find($user);
+        if (!$user) {
+            return response()->json(null, 204);
+        }
+
+        $posts = $user->posts;
+        // retorna um json com arquivos válidos
+        return response()->json($posts, 200);
     }
 }

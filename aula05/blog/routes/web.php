@@ -30,3 +30,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 // No plural, tem q ser um array
 // Route::resources(['user' => 'UsersController']);
 Route::resource('user', 'UsersController');
+Route::get('/user/{user}/posts', 'UsersController@posts');
+
+Route::resource('post', 'PostController');
